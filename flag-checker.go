@@ -28,19 +28,19 @@ func CheckFlags() (bool, string, string, string) {
 		goodFlags = false
 	}
 
-	if seasonFlag == "" {
+	if !helpFlag && seasonFlag == "" {
 		fmt.Println("Season flag is required")
 
 		goodFlags = false
 	}
 
-	if eventCodeFlag == "" {
+	if !helpFlag && eventCodeFlag == "" {
 		fmt.Println("Event code flag is required")
 
 		goodFlags = false
 	}
 
-	if apiKeyFlag == "" {
+	if !helpFlag && apiKeyFlag == "" {
 		fmt.Println("API key is required\n(Should be in the form of \"username:authorizationKey\")")
 
 		goodFlags = false
