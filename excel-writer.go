@@ -289,7 +289,7 @@ func GenerateMatchsheets(season string, eventCode string, apiKey string) {
 		fmt.Println(err)
 	}
 
-	if err := f.SaveAs("FTCCMP1FRAN.xlsx"); err != nil {
+	if err := f.SaveAs("Matchsheet.xlsx"); err != nil {
 		fmt.Println(err)
 	}
 }
